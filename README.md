@@ -185,10 +185,12 @@ The test cases are presented in 6 different files. You can view all the test cas
 
 ## Flaky Tests Disclaimer
 
-Issue Overview:
+*Issue Overview:*
+
 Some of the tests in this repository have been identified as flaky, particularly those that depend on the timely loading of web pages. These tests may fail intermittently due to race conditions related to the asynchronous nature of web page loading. Specifically, when the website takes longer than expected to load, elements that the test interacts with may not be available within the initially defined timeout, resulting in a timeout error or element not found error.
 An example of such a failure is captured in the screenshot below, which shows the error message when the page is not fully loaded before the test attempts to interact with a web element.
-![Flaky Test Error](teacher/Desktop/Screenshot 2024-12-30 at 3.32.39 PM.png)
+
+![Flaky Test Error]<img width="1385" alt="image" src="https://github.com/user-attachments/assets/c7b7c0f4-02b6-4cf5-a2f2-685072afbf58" />
 
 ### Solutions Implemented:
 
