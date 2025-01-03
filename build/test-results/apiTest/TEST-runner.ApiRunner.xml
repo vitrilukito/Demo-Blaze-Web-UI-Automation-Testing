@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.ApiRunner" tests="23" skipped="0" failures="0" errors="0" timestamp="2024-12-29T15:35:22" hostname="SISs-MacBook-Air.local" time="77.882">
+  <properties/>
+  <testcase name="Test get list data with a valid URL" classname="runner.ApiRunner" time="4.154"/>
+  <testcase name="Test get list data with an invalid URL" classname="runner.ApiRunner" time="2.34"/>
+  <testcase name="Test get list data with a valid URL without authorization" classname="runner.ApiRunner" time="2.829"/>
+  <testcase name="Test create new users normal" classname="runner.ApiRunner" time="4.142"/>
+  <testcase name="Test create new users without authorization" classname="runner.ApiRunner" time="3.029"/>
+  <testcase name="Test create new users with a taken email" classname="runner.ApiRunner" time="2.779"/>
+  <testcase name="Test create new users with incomplete fields in the body" classname="runner.ApiRunner" time="2.387"/>
+  <testcase name="Test delete users normal" classname="runner.ApiRunner" time="3.818"/>
+  <testcase name="Test delete users with non-existent user ID" classname="runner.ApiRunner" time="3.438"/>
+  <testcase name="Test update users normal" classname="runner.ApiRunner" time="3.755"/>
+  <testcase name="Test update users with empty field" classname="runner.ApiRunner" time="4.655"/>
+  <testcase name="Test update users with a non-existing user ID" classname="runner.ApiRunner" time="4.115"/>
+  <testcase name="Test name field boundary with minimum value length" classname="runner.ApiRunner" time="4.308"/>
+  <testcase name="Test name field boundary with maximum value length" classname="runner.ApiRunner" time="4.446"/>
+  <testcase name="Test name field boundary beyond maximum value length" classname="runner.ApiRunner" time="3.077"/>
+  <testcase name="Test email field boundary with minimum value length" classname="runner.ApiRunner" time="6.261"/>
+  <testcase name="Test email field boundary with maximum value lengths" classname="runner.ApiRunner" time="2.705"/>
+  <testcase name="Test email field boundary beyond maximum value lengths" classname="runner.ApiRunner" time="2.825"/>
+  <testcase name="Test email field boundary with invalid value" classname="runner.ApiRunner" time="2.111"/>
+  <testcase name="Test gender field boundary with valid value" classname="runner.ApiRunner" time="2.187"/>
+  <testcase name="Test gender field boundary with invalid value" classname="runner.ApiRunner" time="2.246"/>
+  <testcase name="Test status field boundary with valid value" classname="runner.ApiRunner" time="3.63"/>
+  <testcase name="Test status field boundary with invalid value" classname="runner.ApiRunner" time="2.642"/>
+  <system-out><![CDATA[
+@api @api
+Scenario: Test get list data with a valid URL                                # src/test/resources/apiFeatures/api.feature:5
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "GET_LIST_USERS"                             # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"id":7606591,"name":"Vitri","email":"l73QZOAL5h@testdata.com","gender":"female","status":"active"},{"id":7606590,"name":"Vitri","email":"B7fJAsyFLW@testdata.com","gender":"male","status":"active"},{"id":7606589,"name":"Vitri","email":"Y3vmun8SP4cDRzrXQbh1umpe0d3w4QiGlLeiXBpyQ2970am1L0OXTob0lizvgxjAisEIuJOgUygR1nt3lkIgObXW3zpdQNbELGGnHUIyaiT6wjovK3caRs42sBdL3RXyurqI0AaL6oZ5ag7IdE3hcpkB55Q4ivgpzmv7THVXkpqjYIGBXckuxJWX28V@testdata.com","gender":"female","status":"active"},{"id":7606588,"name":"Vitri","email":"j@testing.com","gender":"female","status":"active"},{"id":7606587,"name":"grmdBabcgNvCdYTxWByMwJpqfEsJJdthuhIssJHSumFiEmRUotqFWELydgLdWZGkhRERslRFvnrwsXHlHWhuZwsIkeVZAbmxieknSEslNMgpezxjLVgJQUEGBTEljiWVvismLGaLGCGgsmiTwgeoWRXeAJWMNQgERJfJxBAkpDgNmjnsBfNltaGeUFJHRaObpaqkPjzo","email":"cDy4hJSj02@testdata.com","gender":"female","status":"active"},{"id":7606586,"name":"T","email":"36GPoaWKbS@testdata.com","gender":"female","status":"active"},{"id":7606585,"name":"Vitri","email":"6zl3W3t8mE@testdata.com","gender":"female","status":"active"},{"id":7606584,"name":"Vitri","email":"q6zETWei9u@testdata.com","gender":"female","status":"active"},{"id":7606583,"name":"Vitri Edit","email":"IjFviliLi2@testdata.com","gender":"female","status":"active"},{"id":7606582,"name":"Vitri","email":"VutvHS1MJp@testdata.com","gender":"female","status":"active"}]
+  And hit the API to get list data                                           # stepDef.ApiStep.hitTheAPIToGetListData()
+The status code is 200
+  Then the status code should be 200                                         # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is OK
+  Then the response message should be "OK"                                   # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+7606591
+Vitri
+l73QZOAL5h@testdata.com
+female
+active
+  Then validation response body get list users                               # stepDef.ApiStep.validationResponseBodyGetListUsers()
+  Then validation response JSON with JSONSchema "get_list_users_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test get list data with an invalid URL        # src/test/resources/apiFeatures/api.feature:14
+The endpoint is https://gorest.co.in/public/v2/users123
+  Given prepare an invalid URL for the "GET_LIST_USERS" # stepDef.ApiStep.prepareAnInvalidURLForThe(java.lang.String)
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="bmwZegADdxs2s7PVIHtpmFcnAeRtd6pmXYsmYDEYP_S2GsiX3HTDBHHClogi7FzddXkgSyBJ3TEhlF-O02sPug" /><link rel="stylesheet" href="/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css" media="all" data-turbolinks-track="reload" /><script src="/packs/js/application-194ed409298f13f197d2.js" data-turbolinks-track="reload" defer="defer"></script><script async="true" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140"></script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go REST</a><button aria-controls="AppNavBar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#AppNavBar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="AppNavBar"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="/qa"><i class="fas fa-life-ring"></i> Help</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="ToolsDropDown" role="button"><i class="fas fa-tools"></i> Tools</a><ul aria-labelledby="ToolsDropDown" class="dropdown-menu"><li class=""><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a></li><li class=""><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a></li><li class=""><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></nav><div class="container pt-3"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="card text-white border-secondary bg-dark"><div class="card-header"><h1 class="card-title text-warning"><i class="fas fa-ghost text-white slide-right"></i> HTTP: Not Found </h1></div><div class="card-body"><h3 class="leaad code-text"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>print</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page</em></code></p></div><div class="card-footer"><p class="text-danger">We are sorry, something went wrong. Please try again later.</p></div></div></div><hr class="mt-5" /><div class="container"><div class="footer"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2024</li><li class="list-inline-item float-lg-end"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-end me-3"><a href="/contact-us">Contact Us</a></li></ul></div></div></body></html>
+  And hit the API to get list data                      # stepDef.ApiStep.hitTheAPIToGetListData()
+The status code is 404
+  Then the status code should be 404                    # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Not Found
+  Then the response message should be "Not Found"       # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+
+@api @api
+Scenario: Test get list data with a valid URL without authorization                         # src/test/resources/apiFeatures/api.feature:21
+The endpoint is  https://gorest.co.in/public/v2/users
+  Given prepare a valid URL without a valid token for the "GET_LIST_USERS"                  # stepDef.ApiStep.prepareAValidURLWithoutAValidTokenForThe(java.lang.String)
+{"message":"Invalid token"}
+  And hit the API to get data                                                               # stepDef.ApiStep.hitTheAPIToGetData()
+The status code is 401
+  Then the status code should be 401                                                        # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unauthorized
+  Then the response message should be "Unauthorized"                                        # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "get_list_users_without_authorization.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test create new users normal                                              # src/test/resources/apiFeatures/api.feature:29
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                  # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606605,"name":"Vitri","email":"Ujth521U3H@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users                                             # stepDef.ApiStep.hitTheAPIPostCreateNewUsers()
+The status code is 201
+  Then the status code should be 201                                                # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                     # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606605,"name":"Vitri","email":"Ujth521U3H@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                               # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "post_create_new_users_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test create new users without authorization                                               # src/test/resources/apiFeatures/api.feature:38
+The endpoint is  https://gorest.co.in/public/v2/users
+  Given prepare a valid URL without a valid token for the "CREATE_NEW_USERS"                        # stepDef.ApiStep.prepareAValidURLWithoutAValidTokenForThe(java.lang.String)
+{"message":"Invalid token"}
+  And hit the API to post create new users                                                          # stepDef.ApiStep.hitTheAPIToPostCreateNewUsers()
+The status code is 401
+  Then the status code should be 401                                                                # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unauthorized
+  Then the response message should be "Unauthorized"                                                # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "post_create_new_users_without_authentication.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test create new users with a taken email                                       # src/test/resources/apiFeatures/api.feature:46
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                       # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"email","message":"has already been taken"}]
+  And hit the API to create new users                                                    # stepDef.ApiStep.hitTheAPIToCreateNewUsers()
+The status code is 422
+  Then the status code should be 422                                                     # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                             # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "post_create_new_users_taken_email.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test create new users with incomplete fields in the body                           # src/test/resources/apiFeatures/api.feature:54
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                           # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]
+  And hit the API post create new users without body                                         # stepDef.ApiStep.hitTheAPIPostCreateNewUsersWithoutBody()
+The status code is 422
+  Then the status code should be 422                                                         # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                                 # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "post_create_new_users_incomplete_body.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test delete users normal                    # src/test/resources/apiFeatures/api.feature:62
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"    # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606606,"name":"Vitri","email":"P1wfuAbGNQ@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users               # stepDef.ApiStep.hitTheAPIPostCreateNewUsers()
+The status code is 201
+  Then the status code should be 201                  # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"       # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606606,"name":"Vitri","email":"P1wfuAbGNQ@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  And hit the API delete users                        # stepDef.ApiStep.hitTheAPIDeleteUsers()
+The status code is 204
+  Then the status code should be 204                  # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is No Content
+  Then the response message should be "No Content"    # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+
+@api @api
+Scenario: Test delete users with non-existent user ID                              # src/test/resources/apiFeatures/api.feature:73
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                 # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606607,"name":"Vitri","email":"DDwZrGb3lS@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users                                            # stepDef.ApiStep.hitTheAPIPostCreateNewUsers()
+The status code is 201
+  Then the status code should be 201                                               # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                    # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606607,"name":"Vitri","email":"DDwZrGb3lS@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                              # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+{"message":"Resource not found"}
+  And hit the API to delete users                                                  # stepDef.ApiStep.hitTheAPIToDeleteUsers()
+The status code is 404
+  Then the status code should be 404                                               # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Not Found
+  Then the response message should be "Not Found"                                  # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "delete_users_nonexistent_id.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test update users normal                                         # src/test/resources/apiFeatures/api.feature:85
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                         # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606608,"name":"Vitri","email":"XBYT22Kf37@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users                                    # stepDef.ApiStep.hitTheAPIPostCreateNewUsers()
+The status code is 201
+  Then the status code should be 201                                       # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                            # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606608,"name":"Vitri","email":"XBYT22Kf37@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                      # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  And hit the API to update data                                           # stepDef.ApiStep.hitTheAPIToUpdateData()
+The status code is 200
+  Then the status code should be 200                                       # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is OK
+  Then the response message should be "OK"                                 # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"email":"ra3uChsuGH@testdata.com","name":"Vitri Edit","gender":"female","status":"active","id":7606608}
+  Then validation response body update users                               # stepDef.ApiStep.validationResponseBodyUpdateUsers()
+  Then validation response JSON with JSONSchema "update_users_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test update users with empty field                                    # src/test/resources/apiFeatures/api.feature:98
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                              # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606609,"name":"Vitri","email":"gwKc470WCm@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users                                         # stepDef.ApiStep.hitTheAPIPostCreateNewUsers()
+The status code is 201
+  Then the status code should be 201                                            # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                 # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606609,"name":"Vitri","email":"gwKc470WCm@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                           # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+[{"field":"email","message":"can't be blank"},{"field":"name","message":"can't be blank"},{"field":"gender","message":"can't be blank, can be male of female"},{"field":"status","message":"can't be blank"}]
+  And hit the API to update data with empty field                               # stepDef.ApiStep.hitTheAPIToUpdateDataWithEmptyField()
+The status code is 422
+  Then the status code should be 422                                            # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                    # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "update_users_empty_field.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test update users with a non-existing user ID                            # src/test/resources/apiFeatures/api.feature:110
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                 # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606610,"name":"Vitri","email":"R7rcnHH0c6@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users                                            # stepDef.ApiStep.hitTheAPIPostCreateNewUsers()
+The status code is 201
+  Then the status code should be 201                                               # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                    # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606610,"name":"Vitri","email":"R7rcnHH0c6@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                              # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+{"message":"Resource not found"}
+  And hit the API to update data with non-existing ID                              # stepDef.ApiStep.hitTheAPIToUpdateDataWithNonExistingID()
+The status code is 404
+  Then the status code should be 404                                               # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Not Found
+  Then the response message should be "Not Found"                                  # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "update_users_nonexisting_id.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test name field boundary with minimum value length                      # src/test/resources/apiFeatures/api.feature:124
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606611,"name":"v","email":"7RIfvOBEAb@testdata.com","gender":"female","status":"active"}
+  And hit the API post create users with only one character name                  # stepDef.ApiStep.hitTheAPIPostCreateUsersWithOnlyOneCharacterName()
+The status code is 201
+  Then the status code should be 201                                              # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                   # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606611,"name":"v","email":"7RIfvOBEAb@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                             # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "name_field_boundary_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test name field boundary with maximum value length                      # src/test/resources/apiFeatures/api.feature:133
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606612,"name":"cXerBDfGbLRpQssBHqdWImGXJblqDZAhZWwuTyRzMefGdZYlhrZMrukyKSlmALsRtRGKBUSGcSGudnoPLKTidpvtKxEjMMrPliChxcTSPpOnlbZeJXCcTLqWyzkKfgbOOtbcZajGwupbwXYngzYtqohZItqiDKaDvvyaXjhUwgAEUuCyqWKFGAdPjfyEgnYsSHUMeAzC","email":"ykqwo7mfgZ@testdata.com","gender":"female","status":"active"}
+  And hit the API post create users with 200 characters                           # stepDef.ApiStep.hitTheAPIPostCreateUsersWithCharacters(int)
+The status code is 201
+  Then the status code should be 201                                              # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                   # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606612,"name":"cXerBDfGbLRpQssBHqdWImGXJblqDZAhZWwuTyRzMefGdZYlhrZMrukyKSlmALsRtRGKBUSGcSGudnoPLKTidpvtKxEjMMrPliChxcTSPpOnlbZeJXCcTLqWyzkKfgbOOtbcZajGwupbwXYngzYtqohZItqiDKaDvvyaXjhUwgAEUuCyqWKFGAdPjfyEgnYsSHUMeAzC","email":"ykqwo7mfgZ@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                             # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "name_field_boundary_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test name field boundary beyond maximum value length                   # src/test/resources/apiFeatures/api.feature:142
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                               # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"name","message":"is too long (maximum is 200 characters)"}]
+  And hit the API post create users with more than 200 characters                # stepDef.ApiStep.hitTheAPIPostCreateUsersWithMoreThanCharacters(int)
+The status code is 422
+  Then the status code should be 422                                             # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                     # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "name_field_beyond_maximum.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test email field boundary with minimum value length                      # src/test/resources/apiFeatures/api.feature:150
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                 # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606613,"name":"Vitri","email":"f@testing.com","gender":"female","status":"active"}
+  And hit the API post create users with only one character email                  # stepDef.ApiStep.hitTheAPIPostCreateUsersWithOnlyOneCharacterEmail()
+The status code is 201
+  Then the status code should be 201                                               # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                    # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606613,"name":"Vitri","email":"f@testing.com","gender":"female","status":"active"}
+  Then validation response body post create new users                              # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "email_field_boundary_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test email field boundary with maximum value lengths                     # src/test/resources/apiFeatures/api.feature:159
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                 # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606614,"name":"Vitri","email":"Fd4KIvcRLLIAMwsetHQmJS4EtyCDQx7LOGmBssvcScPpbJloOL7HTLZHyVHAN2wQUQwatsB9Jg7krIoFCc2pNohmQKp1USroJOescyjNUoQRg4K9VUuwmjIbTYBIAwC7AWtGwZpLkzpBVeSvNsL3VdjfkyZia7B2bTVl1VTsr51SnkoCzfB9Yqcl8Yi@testdata.com","gender":"female","status":"active"}
+  And hit the API post create users with 200 characters email                      # stepDef.ApiStep.hitTheAPIPostCreateUsersWithCharactersEmail(int)
+The status code is 201
+  Then the status code should be 201                                               # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                    # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606614,"name":"Vitri","email":"Fd4KIvcRLLIAMwsetHQmJS4EtyCDQx7LOGmBssvcScPpbJloOL7HTLZHyVHAN2wQUQwatsB9Jg7krIoFCc2pNohmQKp1USroJOescyjNUoQRg4K9VUuwmjIbTYBIAwC7AWtGwZpLkzpBVeSvNsL3VdjfkyZia7B2bTVl1VTsr51SnkoCzfB9Yqcl8Yi@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                              # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "email_field_boundary_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test email field boundary beyond maximum value lengths                  # src/test/resources/apiFeatures/api.feature:168
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"email","message":"is too long (maximum is 200 characters)"}]
+  And hit the API post create users with more than 200 characters email           # stepDef.ApiStep.hitTheAPIPostCreateUsersWithMoreThanCharactersEmail(int)
+The status code is 422
+  Then the status code should be 422                                              # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                      # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "email_field_beyond_maximum.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test email field boundary with invalid value                           # src/test/resources/apiFeatures/api.feature:176
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                               # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"email","message":"is invalid"}]
+  And hit the API post create users with invalid email format                    # stepDef.ApiStep.hitTheAPIPostCreateUsersWithInvalidEmailFormat()
+The status code is 422
+  Then the status code should be 422                                             # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                     # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "email_field_invalid_value.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test gender field boundary with valid value                               # src/test/resources/apiFeatures/api.feature:184
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                  # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606615,"name":"Vitri","email":"vi3PJkGI9a@testdata.com","gender":"male","status":"active"}
+  And hit the API post create new users with valid gender field                     # stepDef.ApiStep.hitTheAPIPostCreateNewUsersWithValidGenderField()
+The status code is 201
+  Then the status code should be 201                                                # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                     # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606615,"name":"Vitri","email":"vi3PJkGI9a@testdata.com","gender":"male","status":"active"}
+  Then validation response body post create new users                               # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "gender_field_boundary_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test gender field boundary with invalid value                           # src/test/resources/apiFeatures/api.feature:193
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"gender","message":"can't be blank, can be male of female"}]
+  And hit the API post create new users with invalid gender                       # stepDef.ApiStep.hitTheAPIPostCreateNewUsersWithInvalidGender()
+The status code is 422
+  Then the status code should be 422                                              # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                      # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "gender_field_invalid_value.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test status field boundary with valid value                               # src/test/resources/apiFeatures/api.feature:201
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                  # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+{"id":7606616,"name":"Vitri","email":"nI4j4zTBHb@testdata.com","gender":"female","status":"active"}
+  And hit the API post create new users with valid status                           # stepDef.ApiStep.hitTheAPIPostCreateNewUsersWithValidStatus()
+The status code is 201
+  Then the status code should be 201                                                # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Created
+  Then the response message should be "Created"                                     # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+{"id":7606616,"name":"Vitri","email":"nI4j4zTBHb@testdata.com","gender":"female","status":"active"}
+  Then validation response body post create new users                               # stepDef.ApiStep.validationResponseBodyPostCreateNewUsers()
+  Then validation response JSON with JSONSchema "status_field_boundary_normal.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+
+@api @api
+Scenario: Test status field boundary with invalid value                           # src/test/resources/apiFeatures/api.feature:210
+The endpoint is https://gorest.co.in/public/v2/users
+  Given prepare a valid URL for "CREATE_NEW_USERS"                                # stepDef.ApiStep.prepareAValidURLFor(java.lang.String)
+[{"field":"status","message":"can't be blank"}]
+  And hit the API post create new users with invalid status                       # stepDef.ApiStep.hitTheAPIPostCreateNewUsersWithInvalidStatus()
+The status code is 422
+  Then the status code should be 422                                              # stepDef.ApiStep.theStatusCodeShouldBe(int)
+The response message is Unprocessable Entity
+  Then the response message should be "Unprocessable Entity"                      # stepDef.ApiStep.theResponseMessageShouldBe(java.lang.String)
+  Then validation response JSON with JSONSchema "status_field_invalid_value.json" # stepDef.ApiStep.validationResponseJSONWithJSONSchema(java.lang.String)
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

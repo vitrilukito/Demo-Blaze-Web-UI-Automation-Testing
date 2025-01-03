@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.CucumberTest" tests="39" skipped="0" failures="6" errors="0" timestamp="2024-12-30T05:41:13" hostname="SISs-MacBook-Air.local" time="1665.784">
+  <properties/>
+  <testcase name="Test the functionality of the &quot;Place Order&quot; button" classname="runner.CucumberTest" time="22.314"/>
+  <testcase name="Test the functionality of the &quot;Close&quot; button in the Place Order form" classname="runner.CucumberTest" time="21.021"/>
+  <testcase name="Test the functionality of the &quot;Delete&quot; button in the Place Order form" classname="runner.CucumberTest" time="19.906"/>
+  <testcase name="Test the functionality of the Place Order form normal" classname="runner.CucumberTest" time="28.446"/>
+  <testcase name="Test the functionality of the Place Order form without a name" classname="runner.CucumberTest" time="31.776"/>
+  <testcase name="Test the functionality of the Place Order form without a credit card information" classname="runner.CucumberTest" time="15.376">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()='Samsung galaxy s6']&quot;}&#10;  (Session info: chrome=131.0.6778.205)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5ba57f66e504ab54809f401cb9a67e69, findElement {value=//a[normalize-space()='Samsung galaxy s6'], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51568/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5ba57f66e504ab54809f401cb9a67e69" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()='Samsung galaxy s6']&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ba57f66e504ab54809f401cb9a67e69, findElement {value=//a[normalize-space()='Samsung galaxy s6'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51568/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ba57f66e504ab54809f401cb9a67e69
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at app//pages.WebPage.samsungGalaxySixTitle(WebPage.java:191)
+	at app//stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix(WebStep.java:172)
+	at ✽.user will click on the title of Samsung galaxy six(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/cart.feature:127)
+</failure>
+  </testcase>
+  <testcase name="Test the functionality of the &quot;Place Order&quot; button to place multiple orders" classname="runner.CucumberTest" time="27.963"/>
+  <testcase name="Test the functionality of the contact form normal" classname="runner.CucumberTest" time="14.344"/>
+  <testcase name="Test the functionality of the close button in the contact form" classname="runner.CucumberTest" time="11.045"/>
+  <testcase name="Test the functionality of the contact form with invalid contact email" classname="runner.CucumberTest" time="13.765"/>
+  <testcase name="Test the functionality of the contact form with invalid contact name" classname="runner.CucumberTest" time="13.404"/>
+  <testcase name="Test the functionality of the contact form without a message" classname="runner.CucumberTest" time="13.712"/>
+  <testcase name="Test the functionality of the carousel previous button" classname="runner.CucumberTest" time="6.348"/>
+  <testcase name="Test the functionality of the carousel next button" classname="runner.CucumberTest" time="10.946"/>
+  <testcase name="Test the functionality of &quot;Phones&quot; category" classname="runner.CucumberTest" time="8.013"/>
+  <testcase name="Test the functionality of &quot;Laptops&quot; category" classname="runner.CucumberTest" time="6.492">
+    <failure message="org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools&#10;  (failed to check if window was closed: disconnected: not connected to DevTools)&#10;  (Session info: chrome=131.0.6778.205)&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7fc0a7ccb8f874d5ce5cd29b29a487de, findElement {value=(//a[normalize-space()='Laptops'])[1], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51794/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7fc0a7ccb8f874d5ce5cd29b29a487de" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7fc0a7ccb8f874d5ce5cd29b29a487de, findElement {value=(//a[normalize-space()='Laptops'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51794/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fc0a7ccb8f874d5ce5cd29b29a487de
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at app//pages.WebPage.clickLaptops(WebPage.java:88)
+	at app//stepDef.WebStep.userClicksLaptopsCategory(WebStep.java:42)
+	at ✽.user clicks Laptops category(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/home.feature:29)
+</failure>
+  </testcase>
+  <testcase name="Test the functionality of &quot;Monitors&quot; category" classname="runner.CucumberTest" time="212.173">
+    <failure message="org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fa1c0acf44845a9ea1dc2a719ae24456, get {url=https://www.demoblaze.com/index.html}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51818/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fa1c0acf44845a9ea1dc2a719ae24456" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa1c0acf44845a9ea1dc2a719ae24456, get {url=https://www.demoblaze.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51818/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa1c0acf44845a9ea1dc2a719ae24456
+	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base@17.0.13/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+	at ✽.open the website of DemoBlaze(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/home.feature:34)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:572)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</failure>
+  </testcase>
+  <testcase name="Test the functionality of &quot;Contact&quot; button" classname="runner.CucumberTest" time="7.627"/>
+  <testcase name="Test the functionality of &quot;About us&quot; button" classname="runner.CucumberTest" time="5.993"/>
+  <testcase name="Test the functionality of &quot;Cart&quot; button" classname="runner.CucumberTest" time="79.075"/>
+  <testcase name="Test the functionality of &quot;Login&quot; button" classname="runner.CucumberTest" time="9.019"/>
+  <testcase name="Test the functionality of &quot;Signup&quot; button" classname="runner.CucumberTest" time="6.367"/>
+  <testcase name="Test the functionality of the &quot;previous and next products&quot; button" classname="runner.CucumberTest" time="7.889"/>
+  <testcase name="Test the functionality of the Login form normal" classname="runner.CucumberTest" time="69.552">
+    <failure message="org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer&#10;  (failed to check if window was closed: disconnected: not connected to DevTools)&#10;  (Session info: chrome=131.0.6778.205)&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [23e5422587d5c36ba5fcbe373def85ba, get {url=https://www.demoblaze.com/index.html}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52011/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 23e5422587d5c36ba5fcbe373def85ba" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23e5422587d5c36ba5fcbe373def85ba, get {url=https://www.demoblaze.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52011/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23e5422587d5c36ba5fcbe373def85ba
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at app//pages.WebPage.websiteOfDemoBlaze(WebPage.java:74)
+	at app//stepDef.WebStep.openTheWebsiteOfDemoBlaze(WebStep.java:26)
+	at ✽.open the website of DemoBlaze(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/login.feature:6)
+</failure>
+  </testcase>
+  <testcase name="Test the functionality of the Login form without a username" classname="runner.CucumberTest" time="590.261"/>
+  <testcase name="Test the functionality of the Login form without a password" classname="runner.CucumberTest" time="15.388"/>
+  <testcase name="Test the functionality of the Login form with an unregistered username" classname="runner.CucumberTest" time="12.053"/>
+  <testcase name="Test the functionality of the Logout button" classname="runner.CucumberTest" time="17.961"/>
+  <testcase name="Test the functionality of &quot;Samsung galaxy six&quot; title button" classname="runner.CucumberTest" time="8.364"/>
+  <testcase name="Test the functionality of &quot;Nokia lumia 1520&quot; title button" classname="runner.CucumberTest" time="7.953"/>
+  <testcase name="Test the functionality of &quot;Nexus six&quot; title button" classname="runner.CucumberTest" time="7.787"/>
+  <testcase name="Test the functionality of &quot;Samsung galaxy seven&quot; title button" classname="runner.CucumberTest" time="6.882"/>
+  <testcase name="Test the functionality of &quot;Iphone six&quot; title button" classname="runner.CucumberTest" time="55.982">
+    <failure message="org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer&#10;  (failed to check if window was closed: disconnected: not connected to DevTools)&#10;  (Session info: chrome=131.0.6778.205)&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6022e0bb6b0547891c9bddf2f43c3418, get {url=https://www.demoblaze.com/index.html}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6022e0bb6b0547891c9bddf2f43c3418" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6022e0bb6b0547891c9bddf2f43c3418, get {url=https://www.demoblaze.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6022e0bb6b0547891c9bddf2f43c3418
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at app//pages.WebPage.websiteOfDemoBlaze(WebPage.java:74)
+	at app//stepDef.WebStep.openTheWebsiteOfDemoBlaze(WebStep.java:26)
+	at ✽.open the website of DemoBlaze(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/products.feature:34)
+</failure>
+  </testcase>
+  <testcase name="Test the functionality of the &quot;Add to cart&quot; button" classname="runner.CucumberTest" time="229.927">
+    <failure message="org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out&#10;Build info: version: '4.27.0', revision: 'd6e718d134'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [17c89a128744c0724355ad8a5811c161, clickElement {id=f.51562088BB432AA0212079D10ACAB908.d.A92DD4261B539D89D9D1C3478F47BEFF.e.72}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52262}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52262/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (17c89a128744c0724355ad8a5811c161)] -&gt; xpath: //a[normalize-space()='Samsung galaxy s6']]&#10;Session ID: 17c89a128744c0724355ad8a5811c161" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17c89a128744c0724355ad8a5811c161, clickElement {id=f.51562088BB432AA0212079D10ACAB908.d.A92DD4261B539D89D9D1C3478F47BEFF.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52262}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52262/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (17c89a128744c0724355ad8a5811c161)] -&gt; xpath: //a[normalize-space()='Samsung galaxy s6']]
+Session ID: 17c89a128744c0724355ad8a5811c161
+	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at app//org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base@17.0.13/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+	at ✽.user will click on the title of Samsung galaxy six(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/products.feature:43)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:572)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</failure>
+  </testcase>
+  <testcase name="Test the functionality of the Signup form normal" classname="runner.CucumberTest" time="10.773"/>
+  <testcase name="Test the functionality of the Signup form without a username" classname="runner.CucumberTest" time="9.193"/>
+  <testcase name="Test the functionality of the Signup form without a password" classname="runner.CucumberTest" time="9.73"/>
+  <testcase name="Test the functionality of the Signup form with a taken username" classname="runner.CucumberTest" time="9.77"/>
+  <testcase name="Test the functionality of the Close button in the Signup form" classname="runner.CucumberTest" time="11.188"/>
+  <system-out><![CDATA[
+@web @web
+Scenario: Test the functionality of the "Place Order" button     # src/test/resources/webFeatures/cart.feature:5
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form     # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six         # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page  # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                  # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear              # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                    # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                           # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                     # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                    # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of the "Close" button in the Place Order form # src/test/resources/webFeatures/cart.feature:24
+  Given open the website of DemoBlaze                                          # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                     # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                 # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                              # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form               # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                   # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                             # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                              # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                       # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                            # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                  # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                         # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                                   # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                                  # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will click the Close button in the Place Order form                 # stepDef.WebStep.userWillClickTheCloseButtonInThePlaceOrderForm()
+  Then user will be redirected to the Cart page                                # stepDef.WebStep.userWillBeRedirectedToTheCartPage()
+
+@web @web
+Scenario: Test the functionality of the "Delete" button in the Place Order form # src/test/resources/webFeatures/cart.feature:45
+  Given open the website of DemoBlaze                                           # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                      # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                  # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                               # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form                # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                    # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                              # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                               # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                        # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                 # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                 # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                             # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                   # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                          # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Delete button in the Place Order form                 # stepDef.WebStep.userWillClickTheDeleteButtonInThePlaceOrderForm()
+  Then the deleted item will be gone                                            # stepDef.WebStep.theDeletedItemWillBeGone()
+
+@web @web
+Scenario: Test the functionality of the Place Order form normal       # src/test/resources/webFeatures/cart.feature:64
+  Given open the website of DemoBlaze                                 # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products            # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                        # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                     # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form      # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form          # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                    # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                     # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                         # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                          # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                         # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will fill in the name "Vitri"                              # stepDef.WebStep.userWillFillInTheName(java.lang.String)
+  And user will fill in the country "Indonesia"                       # stepDef.WebStep.userWillFillInTheCountry(java.lang.String)
+  And user will fill in the city "Medan"                              # stepDef.WebStep.userWillFillInTheCity(java.lang.String)
+  And user will fill in the credit card "123456789010"                # stepDef.WebStep.userWillFillInTheCreditCard(java.lang.String)
+  And user will fill in the month "11"                                # stepDef.WebStep.userWillFillInTheMonth(java.lang.String)
+  And user will fill in the year "2025"                               # stepDef.WebStep.userWillFillInTheYear(java.lang.String)
+  And user will click the Purchase button                             # stepDef.WebStep.userWillClickThePurchaseButton()
+  Then the successful purchase confirmation details will be displayed # stepDef.WebStep.theSuccessfulPurchaseConfirmationDetailsWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of the Place Order form without a name    # src/test/resources/webFeatures/cart.feature:91
+  Given open the website of DemoBlaze                                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                 # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                             # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                          # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form           # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form               # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                         # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                          # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                   # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page            # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                            # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                        # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                              # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                     # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                               # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                              # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will fill in the name ""                                        # stepDef.WebStep.userWillFillInTheName(java.lang.String)
+  And user will fill in the country "Indonesia"                            # stepDef.WebStep.userWillFillInTheCountry(java.lang.String)
+  And user will fill in the city "Medan"                                   # stepDef.WebStep.userWillFillInTheCity(java.lang.String)
+  And user will fill in the credit card "123456789010"                     # stepDef.WebStep.userWillFillInTheCreditCard(java.lang.String)
+  And user will fill in the month "11"                                     # stepDef.WebStep.userWillFillInTheMonth(java.lang.String)
+  And user will fill in the year "2025"                                    # stepDef.WebStep.userWillFillInTheYear(java.lang.String)
+  And user will click the Purchase button                                  # stepDef.WebStep.userWillClickThePurchaseButton()
+  Then a pop-up message "Please fill out Name and Creditcard." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Place Order form without a credit card information # src/test/resources/webFeatures/cart.feature:118
+  Given open the website of DemoBlaze                                                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                                 # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                             # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                                          # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form                           # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                               # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                                         # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                                          # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                                   # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Samsung galaxy s6']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ba57f66e504ab54809f401cb9a67e69, findElement {value=//a[normalize-space()='Samsung galaxy s6'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51568}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51568/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ba57f66e504ab54809f401cb9a67e69
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.WebPage.samsungGalaxySixTitle(WebPage.java:191)
+	at stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix(WebStep.java:172)
+	at ✽.user will click on the title of Samsung galaxy six(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/cart.feature:127)
+
+  Then user will be directed to Samsung galaxy six details page                            # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                            # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                        # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                              # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                                     # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                                               # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                                              # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will fill in the name "Vitri"                                                   # stepDef.WebStep.userWillFillInTheName(java.lang.String)
+  And user will fill in the country "Indonesia"                                            # stepDef.WebStep.userWillFillInTheCountry(java.lang.String)
+  And user will fill in the city "Medan"                                                   # stepDef.WebStep.userWillFillInTheCity(java.lang.String)
+  And user will fill in the credit card ""                                                 # stepDef.WebStep.userWillFillInTheCreditCard(java.lang.String)
+  And user will fill in the month "11"                                                     # stepDef.WebStep.userWillFillInTheMonth(java.lang.String)
+  And user will fill in the year "2025"                                                    # stepDef.WebStep.userWillFillInTheYear(java.lang.String)
+  And user will click the Purchase button                                                  # stepDef.WebStep.userWillClickThePurchaseButton()
+  Then a pop-up message "Please fill out Name and Creditcard." will appear                 # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the "Place Order" button to place multiple orders # src/test/resources/webFeatures/cart.feature:145
+  Given open the website of DemoBlaze                                                 # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                            # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                        # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                                     # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form                      # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                          # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                                    # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                                     # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user will click on the Add to cart button                                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user will click on the Add to cart button                                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                         # stepDef.WebStep.userClicksCartButton()
+  Then user will see 3 orders list                                                    # stepDef.WebStep.userWillSeeOrdersList(int)
+
+@web @web
+Scenario: Test the functionality of the contact form normal    # src/test/resources/webFeatures/contact.feature:5
+  Given open the website of DemoBlaze                          # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products     # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                               # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                            # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri@abc.com"      # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "Vitri"               # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message "Hi there!"                # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                  # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the close button in the contact form # src/test/resources/webFeatures/contact.feature:17
+  Given open the website of DemoBlaze                                    # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products               # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                         # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                      # stepDef.WebStep.theContactFormWillAppear()
+  And user will click the Close button                                   # stepDef.WebStep.userWillClickTheCloseButton()
+  Then user will be back to the Homepage                                 # stepDef.WebStep.userWillBeBackToTheHomepage()
+
+@web @web
+Scenario: Test the functionality of the contact form with invalid contact email # src/test/resources/webFeatures/contact.feature:26
+  Given open the website of DemoBlaze                                           # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                      # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                                # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                             # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri"                               # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "Vitri"                                # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message "Hi there!"                                 # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                                   # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear                  # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the contact form with invalid contact name # src/test/resources/webFeatures/contact.feature:38
+  Given open the website of DemoBlaze                                          # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                     # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                               # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                            # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri@abc.com"                      # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "vit@123"                             # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message "Hi there!"                                # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                                  # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear                 # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the contact form without a message # src/test/resources/webFeatures/contact.feature:50
+  Given open the website of DemoBlaze                                  # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products             # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                       # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                    # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri@abc.com"              # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "Vitri"                       # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message ""                                 # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                          # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear         # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the carousel previous button # src/test/resources/webFeatures/home.feature:5
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the previous button of the carousel     # stepDef.WebStep.userWillClickOnThePreviousButtonOfTheCarousel()
+  Then user will be directed to the previous slide               # stepDef.WebStep.userWillBeDirectedToThePreviousSlide()
+
+@web @web
+Scenario: Test the functionality of the carousel next button # src/test/resources/webFeatures/home.feature:12
+  Given open the website of DemoBlaze                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the next button of the carousel     # stepDef.WebStep.userWillClickOnTheNextButtonOfTheCarousel()
+  Then user will be directed to the next slide               # stepDef.WebStep.userWillBeDirectedToTheNextSlide()
+
+@web @web
+Scenario: Test the functionality of "Phones" category      # src/test/resources/webFeatures/home.feature:19
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Phones category                          # stepDef.WebStep.userClicksPhonesCategory()
+  Then all phones will be displayed                        # stepDef.WebStep.allPhonesWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Laptops" category     # src/test/resources/webFeatures/home.feature:26
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Laptops category                         # stepDef.WebStep.userClicksLaptopsCategory()
+      org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7fc0a7ccb8f874d5ce5cd29b29a487de, findElement {value=(//a[normalize-space()='Laptops'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51794/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7fc0a7ccb8f874d5ce5cd29b29a487de
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.WebPage.clickLaptops(WebPage.java:88)
+	at stepDef.WebStep.userClicksLaptopsCategory(WebStep.java:42)
+	at ✽.user clicks Laptops category(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/home.feature:29)
+
+  Then all laptops will be displayed                       # stepDef.WebStep.allLaptopsWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Monitors" category    # src/test/resources/webFeatures/home.feature:33
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+      org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa1c0acf44845a9ea1dc2a719ae24456, get {url=https://www.demoblaze.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51818/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa1c0acf44845a9ea1dc2a719ae24456
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at ✽.open the website of DemoBlaze(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/home.feature:34)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:572)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Monitors category                        # stepDef.WebStep.userClicksMonitorsCategory()
+  Then all monitors will be displayed                      # stepDef.WebStep.allMonitorsWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Contact" button       # src/test/resources/webFeatures/home.feature:40
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                           # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                        # stepDef.WebStep.theContactFormWillAppear()
+
+@web @web
+Scenario: Test the functionality of "About us" button      # src/test/resources/webFeatures/home.feature:47
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks About us button                          # stepDef.WebStep.userClicksAboutUsButton()
+  Then a short introduction video will be displayed        # stepDef.WebStep.aShortIntroductionVideoWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Cart" button          # src/test/resources/webFeatures/home.feature:54
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Cart button                              # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                     # stepDef.WebStep.theCartListWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Login" button         # src/test/resources/webFeatures/home.feature:61
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                             # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                          # stepDef.WebStep.theLoginFormWillAppear()
+
+@web @web
+Scenario: Test the functionality of "Signup" button        # src/test/resources/webFeatures/home.feature:68
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                            # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                         # stepDef.WebStep.theSignupFormWillAppear()
+
+@web @web
+Scenario: Test the functionality of the "previous and next products" button # src/test/resources/webFeatures/home.feature:75
+  Given open the website of DemoBlaze                                       # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                  # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the next page button                               # stepDef.WebStep.userWillClickOnTheNextPageButton()
+  Then user will be directed to the next product page                       # stepDef.WebStep.userWillBeDirectedToTheNextProductPage()
+  And user will click on the previous page button                           # stepDef.WebStep.userWillClickOnThePreviousPageButton()
+  Then user will be directed to the previous product page                   # stepDef.WebStep.userWillBeDirectedToThePreviousProductPage()
+
+@web @web
+Scenario: Test the functionality of the Login form normal        # src/test/resources/webFeatures/login.feature:5
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+      org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23e5422587d5c36ba5fcbe373def85ba, get {url=https://www.demoblaze.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52011}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52011/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23e5422587d5c36ba5fcbe373def85ba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at pages.WebPage.websiteOfDemoBlaze(WebPage.java:74)
+	at stepDef.WebStep.openTheWebsiteOfDemoBlaze(WebStep.java:26)
+	at ✽.open the website of DemoBlaze(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/login.feature:6)
+
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form     # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Login form without a username        # src/test/resources/webFeatures/login.feature:16
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                               # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                            # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "" in the login form                        # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                 # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                           # stepDef.WebStep.userClicksTheLoginButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Login form without a password        # src/test/resources/webFeatures/login.feature:27
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                               # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                            # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form             # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "" in the login form                        # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                           # stepDef.WebStep.userClicksTheLoginButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Login form with an unregistered username # src/test/resources/webFeatures/login.feature:38
+  Given open the website of DemoBlaze                                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "KingNebuchadnezzar" in the login form          # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "jfihruf37832" in the login form                # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then a pop-up message "User does not exist." will appear                       # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Logout button            # src/test/resources/webFeatures/login.feature:49
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form     # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user clicks the Logout button                              # stepDef.WebStep.userClicksTheLogoutButton()
+  Then user will be back to the Homepage                         # stepDef.WebStep.userWillBeBackToTheHomepage()
+
+@web @web
+Scenario: Test the functionality of "Samsung galaxy six" title button # src/test/resources/webFeatures/products.feature:5
+  Given open the website of DemoBlaze                                 # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products            # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Samsung galaxy six              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Nokia lumia 1520" title button # src/test/resources/webFeatures/products.feature:12
+  Given open the website of DemoBlaze                               # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products          # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Nokia lumia                   # stepDef.WebStep.userWillClickOnTheTitleOfNokiaLumia()
+  Then user will be directed to Nokia lumia details page            # stepDef.WebStep.userWillBeDirectedToNokiaLumiaDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Nexus six" title button # src/test/resources/webFeatures/products.feature:19
+  Given open the website of DemoBlaze                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Nexus six              # stepDef.WebStep.userWillClickOnTheTitleOfNexusSix()
+  Then user will be directed to Nexus six details page       # stepDef.WebStep.userWillBeDirectedToNexusSixDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Samsung galaxy seven" title button # src/test/resources/webFeatures/products.feature:26
+  Given open the website of DemoBlaze                                   # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products              # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Samsung galaxy seven              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySeven()
+  Then user will be directed to Samsung galaxy seven details page       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySevenDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Iphone six" title button # src/test/resources/webFeatures/products.feature:33
+  Given open the website of DemoBlaze                         # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+      org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6022e0bb6b0547891c9bddf2f43c3418, get {url=https://www.demoblaze.com/index.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6022e0bb6b0547891c9bddf2f43c3418
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at pages.WebPage.websiteOfDemoBlaze(WebPage.java:74)
+	at stepDef.WebStep.openTheWebsiteOfDemoBlaze(WebStep.java:26)
+	at ✽.open the website of DemoBlaze(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/products.feature:34)
+
+  Then user will see the carousel of the featured products    # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Iphone six              # stepDef.WebStep.userWillClickOnTheTitleOfIphoneSix()
+  Then user will be directed to Iphone six details page       # stepDef.WebStep.userWillBeDirectedToIphoneSixDetailsPage()
+
+@web @web
+Scenario: Test the functionality of the "Add to cart" button    # src/test/resources/webFeatures/products.feature:40
+  Given open the website of DemoBlaze                           # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products      # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Samsung galaxy six        # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+      org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17c89a128744c0724355ad8a5811c161, clickElement {id=f.51562088BB432AA0212079D10ACAB908.d.A92DD4261B539D89D9D1C3478F47BEFF.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/cn/rzxb6b5d64j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52262}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52262/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (17c89a128744c0724355ad8a5811c161)] -> xpath: //a[normalize-space()='Samsung galaxy s6']]
+Session ID: 17c89a128744c0724355ad8a5811c161
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:494)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at ✽.user will click on the title of Samsung galaxy six(file:///Users/teacher/IdeaProjects/DemoBlazeWebUIandGorestAPIAutomationTestingFramework/src/test/resources/webFeatures/products.feature:43)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:572)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+  Then user will be directed to Samsung galaxy six details page # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                 # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear             # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form normal # src/test/resources/webFeatures/signup.feature:5
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                            # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                         # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in a new username                         # stepDef.WebStep.userFillsInANewUsername()
+  And user fills in the password "r736r7e3hbf"             # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                       # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "Sign up successful." will appear  # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form without a username       # src/test/resources/webFeatures/signup.feature:16
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                              # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                           # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in the username ""                                          # stepDef.WebStep.userFillsInTheUsername(java.lang.String)
+  And user fills in the password "1234567"                                   # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                                         # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form without a password       # src/test/resources/webFeatures/signup.feature:28
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                              # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                           # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in the username "johndoe"                                   # stepDef.WebStep.userFillsInTheUsername(java.lang.String)
+  And user fills in the password ""                                          # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                                         # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form with a taken username # src/test/resources/webFeatures/signup.feature:39
+  Given open the website of DemoBlaze                                     # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                           # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                        # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in the username "vitrilukito"                            # stepDef.WebStep.userFillsInTheUsername(java.lang.String)
+  And user fills in the password "1234567"                                # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                                      # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "This user already exist." will appear            # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Close button in the Signup form # src/test/resources/webFeatures/signup.feature:50
+  Given open the website of DemoBlaze                                   # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products              # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                         # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                      # stepDef.WebStep.theSignupFormWillAppear()
+  And user clicks the Close button                                      # stepDef.WebStep.userClicksTheCloseButton()
+  Then user will be back to the Homepage                                # stepDef.WebStep.userWillBeBackToTheHomepage()
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

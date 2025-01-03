@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stepDef.CucumberTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2024-12-31T10:52:06" hostname="SISs-MacBook-Air.local" time="655.321">
+  <properties/>
+  <testcase name="Test the functionality of the &quot;Place Order&quot; button" classname="stepDef.CucumberTest" time="24.089"/>
+  <testcase name="Test the functionality of the &quot;Close&quot; button in the Place Order form" classname="stepDef.CucumberTest" time="21.907"/>
+  <testcase name="Test the functionality of the &quot;Delete&quot; button in the Place Order form" classname="stepDef.CucumberTest" time="20.784"/>
+  <testcase name="Test the functionality of the Place Order form normal" classname="stepDef.CucumberTest" time="27.884"/>
+  <testcase name="Test the functionality of the Place Order form without a name" classname="stepDef.CucumberTest" time="31.905"/>
+  <testcase name="Test the functionality of the Place Order form without a credit card information" classname="stepDef.CucumberTest" time="32.891"/>
+  <testcase name="Test the functionality of the &quot;Place Order&quot; button to place multiple orders" classname="stepDef.CucumberTest" time="31.396"/>
+  <testcase name="Test the functionality of the contact form normal" classname="stepDef.CucumberTest" time="14.372"/>
+  <testcase name="Test the functionality of the close button in the contact form" classname="stepDef.CucumberTest" time="11.761"/>
+  <testcase name="Test the functionality of the contact form with invalid contact email" classname="stepDef.CucumberTest" time="13.13"/>
+  <testcase name="Test the functionality of the contact form with invalid contact name" classname="stepDef.CucumberTest" time="88.743"/>
+  <testcase name="Test the functionality of the contact form without a message" classname="stepDef.CucumberTest" time="13.31"/>
+  <testcase name="Test the functionality of the carousel previous button" classname="stepDef.CucumberTest" time="6.404"/>
+  <testcase name="Test the functionality of the carousel next button" classname="stepDef.CucumberTest" time="11.657"/>
+  <testcase name="Test the functionality of &quot;Phones&quot; category" classname="stepDef.CucumberTest" time="8.183"/>
+  <testcase name="Test the functionality of &quot;Laptops&quot; category" classname="stepDef.CucumberTest" time="6.664"/>
+  <testcase name="Test the functionality of &quot;Monitors&quot; category" classname="stepDef.CucumberTest" time="6.504"/>
+  <testcase name="Test the functionality of &quot;Contact&quot; button" classname="stepDef.CucumberTest" time="6.355"/>
+  <testcase name="Test the functionality of &quot;About us&quot; button" classname="stepDef.CucumberTest" time="77.163"/>
+  <testcase name="Test the functionality of &quot;Cart&quot; button" classname="stepDef.CucumberTest" time="7.022"/>
+  <testcase name="Test the functionality of &quot;Login&quot; button" classname="stepDef.CucumberTest" time="8.322"/>
+  <testcase name="Test the functionality of &quot;Signup&quot; button" classname="stepDef.CucumberTest" time="6.856"/>
+  <testcase name="Test the functionality of the &quot;previous and next products&quot; button" classname="stepDef.CucumberTest" time="7.111"/>
+  <testcase name="Test the functionality of the Login form normal" classname="stepDef.CucumberTest" time="13.509"/>
+  <testcase name="Test the functionality of the Login form without a username" classname="stepDef.CucumberTest" time="13.023"/>
+  <testcase name="Test the functionality of the Login form without a password" classname="stepDef.CucumberTest" time="12.3"/>
+  <testcase name="Test the functionality of the Login form with an unregistered username" classname="stepDef.CucumberTest" time="12.53"/>
+  <testcase name="Test the functionality of the Logout button" classname="stepDef.CucumberTest" time="17.969"/>
+  <testcase name="Test the functionality of &quot;Samsung galaxy six&quot; title button" classname="stepDef.CucumberTest" time="8.281"/>
+  <testcase name="Test the functionality of &quot;Nokia lumia 1520&quot; title button" classname="stepDef.CucumberTest" time="7.405"/>
+  <testcase name="Test the functionality of &quot;Nexus six&quot; title button" classname="stepDef.CucumberTest" time="6.988"/>
+  <testcase name="Test the functionality of &quot;Samsung galaxy seven&quot; title button" classname="stepDef.CucumberTest" time="7.217"/>
+  <testcase name="Test the functionality of &quot;Iphone six&quot; title button" classname="stepDef.CucumberTest" time="7.724"/>
+  <testcase name="Test the functionality of the &quot;Add to cart&quot; button" classname="stepDef.CucumberTest" time="11.382"/>
+  <testcase name="Test the functionality of the Signup form normal" classname="stepDef.CucumberTest" time="11.298"/>
+  <testcase name="Test the functionality of the Signup form without a username" classname="stepDef.CucumberTest" time="9.206"/>
+  <testcase name="Test the functionality of the Signup form without a password" classname="stepDef.CucumberTest" time="9.809"/>
+  <testcase name="Test the functionality of the Signup form with a taken username" classname="stepDef.CucumberTest" time="10.761"/>
+  <testcase name="Test the functionality of the Close button in the Signup form" classname="stepDef.CucumberTest" time="11.491"/>
+  <system-out><![CDATA[
+@web @web
+Scenario: Test the functionality of the "Place Order" button     # src/test/resources/features/cart.feature:5
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form     # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six         # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page  # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                  # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear              # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                    # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                           # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                     # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                    # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of the "Close" button in the Place Order form # src/test/resources/features/cart.feature:24
+  Given open the website of DemoBlaze                                          # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                     # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                 # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                              # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form               # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                   # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                             # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                              # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                       # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                            # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                  # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                         # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                                   # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                                  # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will click the Close button in the Place Order form                 # stepDef.WebStep.userWillClickTheCloseButtonInThePlaceOrderForm()
+  Then user will be redirected to the Cart page                                # stepDef.WebStep.userWillBeRedirectedToTheCartPage()
+
+@web @web
+Scenario: Test the functionality of the "Delete" button in the Place Order form # src/test/resources/features/cart.feature:45
+  Given open the website of DemoBlaze                                           # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                      # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                  # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                               # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form                # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                    # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                              # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                               # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                        # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                 # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                 # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                             # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                   # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                          # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Delete button in the Place Order form                 # stepDef.WebStep.userWillClickTheDeleteButtonInThePlaceOrderForm()
+  Then the deleted item will be gone                                            # stepDef.WebStep.theDeletedItemWillBeGone()
+
+@web @web
+Scenario: Test the functionality of the Place Order form normal       # src/test/resources/features/cart.feature:64
+  Given open the website of DemoBlaze                                 # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products            # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                        # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                     # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form      # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form          # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                    # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                     # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                         # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                          # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                         # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will fill in the name "Vitri"                              # stepDef.WebStep.userWillFillInTheName(java.lang.String)
+  And user will fill in the country "Indonesia"                       # stepDef.WebStep.userWillFillInTheCountry(java.lang.String)
+  And user will fill in the city "Medan"                              # stepDef.WebStep.userWillFillInTheCity(java.lang.String)
+  And user will fill in the credit card "123456789010"                # stepDef.WebStep.userWillFillInTheCreditCard(java.lang.String)
+  And user will fill in the month "11"                                # stepDef.WebStep.userWillFillInTheMonth(java.lang.String)
+  And user will fill in the year "2025"                               # stepDef.WebStep.userWillFillInTheYear(java.lang.String)
+  And user will click the Purchase button                             # stepDef.WebStep.userWillClickThePurchaseButton()
+  Then the successful purchase confirmation details will be displayed # stepDef.WebStep.theSuccessfulPurchaseConfirmationDetailsWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of the Place Order form without a name    # src/test/resources/features/cart.feature:91
+  Given open the website of DemoBlaze                                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                 # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                             # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                          # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form           # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form               # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                         # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                          # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                   # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page            # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                            # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                        # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                              # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                     # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                               # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                              # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will fill in the name ""                                        # stepDef.WebStep.userWillFillInTheName(java.lang.String)
+  And user will fill in the country "Indonesia"                            # stepDef.WebStep.userWillFillInTheCountry(java.lang.String)
+  And user will fill in the city "Medan"                                   # stepDef.WebStep.userWillFillInTheCity(java.lang.String)
+  And user will fill in the credit card "123456789010"                     # stepDef.WebStep.userWillFillInTheCreditCard(java.lang.String)
+  And user will fill in the month "11"                                     # stepDef.WebStep.userWillFillInTheMonth(java.lang.String)
+  And user will fill in the year "2025"                                    # stepDef.WebStep.userWillFillInTheYear(java.lang.String)
+  And user will click the Purchase button                                  # stepDef.WebStep.userWillClickThePurchaseButton()
+  Then a pop-up message "Please fill out Name and Creditcard." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Place Order form without a credit card information # src/test/resources/features/cart.feature:118
+  Given open the website of DemoBlaze                                                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                                 # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                             # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                                          # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form                           # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                               # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                                         # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                                          # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                                   # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                            # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                            # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                        # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                              # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                                                     # stepDef.WebStep.theCartListWillBeDisplayed()
+  And user will click the Place Order button                                               # stepDef.WebStep.userWillClickThePlaceOrderButton()
+  Then the place order form will be displayed                                              # stepDef.WebStep.thePlaceOrderFormWillBeDisplayed()
+  And user will fill in the name "Vitri"                                                   # stepDef.WebStep.userWillFillInTheName(java.lang.String)
+  And user will fill in the country "Indonesia"                                            # stepDef.WebStep.userWillFillInTheCountry(java.lang.String)
+  And user will fill in the city "Medan"                                                   # stepDef.WebStep.userWillFillInTheCity(java.lang.String)
+  And user will fill in the credit card ""                                                 # stepDef.WebStep.userWillFillInTheCreditCard(java.lang.String)
+  And user will fill in the month "11"                                                     # stepDef.WebStep.userWillFillInTheMonth(java.lang.String)
+  And user will fill in the year "2025"                                                    # stepDef.WebStep.userWillFillInTheYear(java.lang.String)
+  And user will click the Purchase button                                                  # stepDef.WebStep.userWillClickThePurchaseButton()
+  Then a pop-up message "Please fill out Name and Creditcard." will appear                 # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the "Place Order" button to place multiple orders # src/test/resources/features/cart.feature:145
+  Given open the website of DemoBlaze                                                 # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                            # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                        # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                                     # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form                      # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                          # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                                    # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                                     # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user will click on the title of Samsung galaxy six                              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page                       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user will click on the Add to cart button                                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user will click on the Add to cart button                                       # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear                                   # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+  And user clicks Cart button                                                         # stepDef.WebStep.userClicksCartButton()
+  Then user will see 3 orders list                                                    # stepDef.WebStep.userWillSeeOrdersList(int)
+
+@web @web
+Scenario: Test the functionality of the contact form normal    # src/test/resources/features/contact.feature:5
+  Given open the website of DemoBlaze                          # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products     # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                               # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                            # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri@abc.com"      # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "Vitri"               # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message "Hi there!"                # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                  # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the close button in the contact form # src/test/resources/features/contact.feature:17
+  Given open the website of DemoBlaze                                    # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products               # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                         # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                      # stepDef.WebStep.theContactFormWillAppear()
+  And user will click the Close button                                   # stepDef.WebStep.userWillClickTheCloseButton()
+  Then user will be back to the Homepage                                 # stepDef.WebStep.userWillBeBackToTheHomepage()
+
+@web @web
+Scenario: Test the functionality of the contact form with invalid contact email # src/test/resources/features/contact.feature:26
+  Given open the website of DemoBlaze                                           # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                      # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                                # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                             # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri"                               # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "Vitri"                                # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message "Hi there!"                                 # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                                   # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear                  # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the contact form with invalid contact name # src/test/resources/features/contact.feature:38
+  Given open the website of DemoBlaze                                          # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                     # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                               # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                            # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri@abc.com"                      # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "vit@123"                             # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message "Hi there!"                                # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                                  # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear                 # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the contact form without a message # src/test/resources/features/contact.feature:50
+  Given open the website of DemoBlaze                                  # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products             # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                                       # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                                    # stepDef.WebStep.theContactFormWillAppear()
+  And user will fill in the Contact Email "vitri@abc.com"              # stepDef.WebStep.userWillFillInTheContactEmail(java.lang.String)
+  And user will fill in the Contact Name "Vitri"                       # stepDef.WebStep.userWillFillInTheContactName(java.lang.String)
+  And user will fill in the Message ""                                 # stepDef.WebStep.userWillFillInTheMessage(java.lang.String)
+  And user will click the Send Message button                          # stepDef.WebStep.userWillClickTheSendMessageButton()
+  Then a pop-up message "Thanks for the message!!" will appear         # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the carousel previous button # src/test/resources/features/home.feature:5
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the previous button of the carousel     # stepDef.WebStep.userWillClickOnThePreviousButtonOfTheCarousel()
+  Then user will be directed to the previous slide               # stepDef.WebStep.userWillBeDirectedToThePreviousSlide()
+
+@web @web
+Scenario: Test the functionality of the carousel next button # src/test/resources/features/home.feature:12
+  Given open the website of DemoBlaze                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the next button of the carousel     # stepDef.WebStep.userWillClickOnTheNextButtonOfTheCarousel()
+  Then user will be directed to the next slide               # stepDef.WebStep.userWillBeDirectedToTheNextSlide()
+
+@web @web
+Scenario: Test the functionality of "Phones" category      # src/test/resources/features/home.feature:19
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Phones category                          # stepDef.WebStep.userClicksPhonesCategory()
+  Then all phones will be displayed                        # stepDef.WebStep.allPhonesWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Laptops" category     # src/test/resources/features/home.feature:26
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Laptops category                         # stepDef.WebStep.userClicksLaptopsCategory()
+  Then all laptops will be displayed                       # stepDef.WebStep.allLaptopsWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Monitors" category    # src/test/resources/features/home.feature:33
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Monitors category                        # stepDef.WebStep.userClicksMonitorsCategory()
+  Then all monitors will be displayed                      # stepDef.WebStep.allMonitorsWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Contact" button       # src/test/resources/features/home.feature:40
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Contact button                           # stepDef.WebStep.userClicksContactButton()
+  Then the contact form will appear                        # stepDef.WebStep.theContactFormWillAppear()
+
+@web @web
+Scenario: Test the functionality of "About us" button      # src/test/resources/features/home.feature:47
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks About us button                          # stepDef.WebStep.userClicksAboutUsButton()
+  Then a short introduction video will be displayed        # stepDef.WebStep.aShortIntroductionVideoWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Cart" button          # src/test/resources/features/home.feature:54
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Cart button                              # stepDef.WebStep.userClicksCartButton()
+  Then the cart list will be displayed                     # stepDef.WebStep.theCartListWillBeDisplayed()
+
+@web @web
+Scenario: Test the functionality of "Login" button         # src/test/resources/features/home.feature:61
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                             # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                          # stepDef.WebStep.theLoginFormWillAppear()
+
+@web @web
+Scenario: Test the functionality of "Signup" button        # src/test/resources/features/home.feature:68
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                            # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                         # stepDef.WebStep.theSignupFormWillAppear()
+
+@web @web
+Scenario: Test the functionality of the "previous and next products" button # src/test/resources/features/home.feature:75
+  Given open the website of DemoBlaze                                       # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                  # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the next page button                               # stepDef.WebStep.userWillClickOnTheNextPageButton()
+  Then user will be directed to the next product page                       # stepDef.WebStep.userWillBeDirectedToTheNextProductPage()
+  And user will click on the previous page button                           # stepDef.WebStep.userWillClickOnThePreviousPageButton()
+  Then user will be directed to the previous product page                   # stepDef.WebStep.userWillBeDirectedToThePreviousProductPage()
+
+@web @web
+Scenario: Test the functionality of the Login form normal        # src/test/resources/features/login.feature:5
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form     # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Login form without a username        # src/test/resources/features/login.feature:16
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                               # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                            # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "" in the login form                        # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form                 # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                           # stepDef.WebStep.userClicksTheLoginButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Login form without a password        # src/test/resources/features/login.feature:27
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                               # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                            # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form             # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "" in the login form                        # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                           # stepDef.WebStep.userClicksTheLoginButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Login form with an unregistered username # src/test/resources/features/login.feature:38
+  Given open the website of DemoBlaze                                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "KingNebuchadnezzar" in the login form          # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "jfihruf37832" in the login form                # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then a pop-up message "User does not exist." will appear                       # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Logout button            # src/test/resources/features/login.feature:49
+  Given open the website of DemoBlaze                            # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products       # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Login button                                   # stepDef.WebStep.userClicksLoginButton()
+  Then the Login form will appear                                # stepDef.WebStep.theLoginFormWillAppear()
+  And user fills in the username "vitrilukito" in the login form # stepDef.WebStep.userFillsInTheUsernameInTheLoginForm(java.lang.String)
+  And user fills in the password "1234567" in the login form     # stepDef.WebStep.userFillsInThePasswordInTheLoginForm(java.lang.String)
+  And user clicks the Login button                               # stepDef.WebStep.userClicksTheLoginButton()
+  Then user will see "Welcome" and their username                # stepDef.WebStep.userWillSeeAndTheirUsername(java.lang.String)
+  And user clicks the Logout button                              # stepDef.WebStep.userClicksTheLogoutButton()
+  Then user will be back to the Homepage                         # stepDef.WebStep.userWillBeBackToTheHomepage()
+
+@web @web
+Scenario: Test the functionality of "Samsung galaxy six" title button # src/test/resources/features/products.feature:5
+  Given open the website of DemoBlaze                                 # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products            # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Samsung galaxy six              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Nokia lumia 1520" title button # src/test/resources/features/products.feature:12
+  Given open the website of DemoBlaze                               # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products          # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Nokia lumia                   # stepDef.WebStep.userWillClickOnTheTitleOfNokiaLumia()
+  Then user will be directed to Nokia lumia details page            # stepDef.WebStep.userWillBeDirectedToNokiaLumiaDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Nexus six" title button # src/test/resources/features/products.feature:19
+  Given open the website of DemoBlaze                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Nexus six              # stepDef.WebStep.userWillClickOnTheTitleOfNexusSix()
+  Then user will be directed to Nexus six details page       # stepDef.WebStep.userWillBeDirectedToNexusSixDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Samsung galaxy seven" title button # src/test/resources/features/products.feature:26
+  Given open the website of DemoBlaze                                   # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products              # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Samsung galaxy seven              # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySeven()
+  Then user will be directed to Samsung galaxy seven details page       # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySevenDetailsPage()
+
+@web @web
+Scenario: Test the functionality of "Iphone six" title button # src/test/resources/features/products.feature:33
+  Given open the website of DemoBlaze                         # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products    # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Iphone six              # stepDef.WebStep.userWillClickOnTheTitleOfIphoneSix()
+  Then user will be directed to Iphone six details page       # stepDef.WebStep.userWillBeDirectedToIphoneSixDetailsPage()
+
+@web @web
+Scenario: Test the functionality of the "Add to cart" button    # src/test/resources/features/products.feature:40
+  Given open the website of DemoBlaze                           # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products      # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user will click on the title of Samsung galaxy six        # stepDef.WebStep.userWillClickOnTheTitleOfSamsungGalaxySix()
+  Then user will be directed to Samsung galaxy six details page # stepDef.WebStep.userWillBeDirectedToSamsungGalaxySixDetailsPage()
+  And user will click on the Add to cart button                 # stepDef.WebStep.userWillClickOnTheAddToCartButton()
+  Then a pop-up message "Product added" will appear             # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form normal # src/test/resources/features/signup.feature:5
+  Given open the website of DemoBlaze                      # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                            # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                         # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in a new username                         # stepDef.WebStep.userFillsInANewUsername()
+  And user fills in the password "r736r7e3hbf"             # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                       # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "Sign up successful." will appear  # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form without a username       # src/test/resources/features/signup.feature:16
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                              # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                           # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in the username ""                                          # stepDef.WebStep.userFillsInTheUsername(java.lang.String)
+  And user fills in the password "1234567"                                   # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                                         # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form without a password       # src/test/resources/features/signup.feature:28
+  Given open the website of DemoBlaze                                        # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                   # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                              # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                           # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in the username "johndoe"                                   # stepDef.WebStep.userFillsInTheUsername(java.lang.String)
+  And user fills in the password ""                                          # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                                         # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "Please fill out Username and Password." will appear # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Signup form with a taken username # src/test/resources/features/signup.feature:39
+  Given open the website of DemoBlaze                                     # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products                # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                           # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                        # stepDef.WebStep.theSignupFormWillAppear()
+  And user fills in the username "vitrilukito"                            # stepDef.WebStep.userFillsInTheUsername(java.lang.String)
+  And user fills in the password "1234567"                                # stepDef.WebStep.userFillsInThePassword(java.lang.String)
+  And user clicks the Sign up button                                      # stepDef.WebStep.userClicksTheSignUpButton()
+  Then a pop-up message "This user already exist." will appear            # stepDef.WebStep.aPopUpMessageWillAppear(java.lang.String)
+
+@web @web
+Scenario: Test the functionality of the Close button in the Signup form # src/test/resources/features/signup.feature:50
+  Given open the website of DemoBlaze                                   # stepDef.WebStep.openTheWebsiteOfDemoBlaze()
+  Then user will see the carousel of the featured products              # stepDef.WebStep.userWillSeeTheCarouselOfTheFeaturedProducts()
+  And user clicks Signup button                                         # stepDef.WebStep.userClicksSignupButton()
+  Then the Signup form will appear                                      # stepDef.WebStep.theSignupFormWillAppear()
+  And user clicks the Close button                                      # stepDef.WebStep.userClicksTheCloseButton()
+  Then user will be back to the Homepage                                # stepDef.WebStep.userWillBeBackToTheHomepage()
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>
