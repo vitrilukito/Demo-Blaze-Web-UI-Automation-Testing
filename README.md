@@ -190,11 +190,11 @@ The test cases are presented in 6 different files. You can view all the test cas
 Some of the tests in this repository have been identified as flaky, particularly those that depend on the timely loading of web pages. These tests may fail intermittently due to race conditions related to the asynchronous nature of web page loading. Specifically, when the website takes longer than expected to load, elements that the test interacts with may not be available within the initially defined timeout, resulting in a timeout error or element not found error.
 An example of such a failure is captured in the screenshot below, which shows the error message when the page is not fully loaded before the test attempts to interact with a web element.
 
-![Flaky Test Error]<img width="1385" alt="image" src="https://github.com/user-attachments/assets/c7b7c0f4-02b6-4cf5-a2f2-685072afbf58" />
+<img width="1385" alt="image" src="https://github.com/user-attachments/assets/c7b7c0f4-02b6-4cf5-a2f2-685072afbf58" />
 
 ### Solutions Implemented:
 
-1. **Explicit Waits**: Using WebDriver's 'WebDriverWait' to wait for elements to become visible before interacting with them.
+1. **Explicit Waits**: Using WebDriver's *WebDriverWait* to wait for elements to become visible before interacting with them.
 <img width="1020" alt="image" src="https://github.com/user-attachments/assets/f97ade7e-2a6c-4d99-9dba-437720b88ff4" />
 
 2. **Thread.sleep()**: Introducing controlled delays when necessary to account for page load variability.
